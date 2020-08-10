@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Calculate BMI for multiple persons",
+        "description": "",
+        "id": "bmi-calculation;calculate-bmi-for-multiple-persons",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10479868700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Calculator net page is open",
+            "match": {
+              "location": "scenarioStepDefinition.calculator_net_page_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1946262200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on BMICalculator link",
+            "match": {
+              "location": "scenarioStepDefinition.user_click_on_BMICalculator_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117849200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "BMICalculator page opened successfully",
+            "match": {
+              "location": "scenarioStepDefinition.bmicalculator_page_opened_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13591557100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "we enter value as DataTable and calculate BMI",
+            "match": {
+              "location": "scenarioStepDefinition.we_enter_value_as_DataTable_and_calculate_BMI(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "10",
+                  "127",
+                  "40"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "30",
+                  "156",
+                  "70"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "25",
+                  "152",
+                  "55"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "20",
+                  "160",
+                  "45"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "35",
+                  "160",
+                  "70"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 909829200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "close browser",
+            "match": {
+              "location": "scenarioStepDefinition.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "BMI Calculation",
+    "description": "Calculating the BMI of 5 users",
+    "id": "bmi-calculation",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/calculateBMI.feature"
+  }
+]
